@@ -1,1 +1,142 @@
-<h1> Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./semantic-ui-bootstrap-master/css/smt-bootstrap.css">
+    <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.min.js">
+    <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Lulu Malik</title>
+</head>
+<body id="myList">
+    <nav>
+        <div class="logo">
+          <a style="text-decoration: none !important;">Lulu Maulana Malik</a>
+        </div>
+    </nav>
+    <section class="sec1">
+        <div class="ui items" id="items1">
+            <div class="item">
+              <div class="image">
+                <img src="./wallpaper/foto1.jpg">
+              </div>
+              <div class="content">
+                <a class="header"># Lulu Maulana Malik</a>
+                <div class="meta">
+                  <span>Description</span>
+                </div>
+                <div class="description">
+                  <p><i class="envelope open icon"></i> ryunitou@gmail.com</p>
+                  <p><i class="address book icon"></i> Sukasari no.34 Cibiru Kota Bandung</p>
+                  <p><i class="cogs icon"></i> https://lulumalik.github.io/widget-html/</p>
+                  <p><i class="phone square icon"></i>+62877-2483-3226</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+      <div class="well">
+        <span class="label label-primary label-ribbon-left">Who am i</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla odio et lectus cursus, eleifend ullamcorper libero molestie. Phasellus eleifend ipsum vel leo lobortis, vel ullamcorper libero blandit. Nullam vitae dignissim sem, vel varius justo.
+      </div>
+
+      <div class="label1">
+        <a class="ui green tag label">Vue Js</a>
+        <div class="ui active green progress" id="Vue">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui purple tag label">Bootstrap</a>
+        <div class="ui active purple progress" id="Bootstrap">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui teal tag label">Semantic UI</a>
+        <div class="ui active teal progress" id="Semantic">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui blue tag label">jQuery</a>
+        <div class="ui active blue progress" id="jQuery">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui red tag label">HTML</a>
+        <div class="ui active red progress" id="HTML">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui teal tag label">CSS</a>
+        <div class="ui active teal progress" id="CSS">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+
+        <a class="ui yellow tag label">Javascript</a>
+        <div class="ui active yellow progress" id="Javascript">
+            <div class="bar" style="width: 0%;"></div>
+        </div>
+      </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./Semantic-UI-CSS-master/semantic.min.js"></script>
+    <script>
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black')
+            }
+        })
+    </script>
+    <script>
+
+        $(window).on('scroll', (event) => {
+            // console.log(event.currentTarget.scrollY)
+            if($(window).scrollTop() >= 544) {
+                $('#Vue').progress({
+                    percent: 70
+                })
+            }
+            if ($(window).scrollTop() >= 600) {
+                $('#Bootstrap').progress({
+                    percent: 60
+                })
+            }
+            if ($(window).scrollTop() >= 640) {
+                $('#Semantic').progress({
+                    percent: 60
+                })
+            }
+            if ($(window).scrollTop() >= 690) {
+                $('#jQuery').progress({
+                    percent: 50
+                })
+            }
+            if ($(window).scrollTop() >= 720) {
+                $('#HTML').progress({
+                    percent: 90
+                })
+            }
+            if ($(window).scrollTop() >= 760) {
+                $('#CSS').progress({
+                    percent: 95
+                })
+            }
+            if ($(window).scrollTop() >= 800) {
+                $('#Javascript').progress({
+                    percent: 65
+                })
+            }
+        } )
+
+    </script>
+</body>
+</html>
