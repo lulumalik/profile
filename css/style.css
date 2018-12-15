@@ -9,6 +9,11 @@ section.sec1 {
   background-size: cover;
   background-position: center;
 }
+section.sec1 .row .content {
+  font-family: 'Staatliches', cursive;
+  color : white;
+  text-shadow: 1px 1px 5px #000;
+}
 section.sec1 .ui {
   padding: 20px;
   margin: auto;
@@ -26,6 +31,8 @@ section.sec1 .row .content {
   left: auto;
 }
 section.content {
+  margin:0px;
+  padding: 0px;
   width: auto;
 }
 section.content .label1 {
@@ -42,14 +49,14 @@ section.content .label1 .row .Vue {
   margin-left: 25px;
   margin-bottom: 40px;
 }
-section.content .label1 .row .CSS {
+section.content .label1 .row .Js {
   margin-top: 10px;
-  margin-left: 35px;
+  margin-left: 10px;
   margin-bottom: 40px;
 }
 section.content .label1 .row .HTML {
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 0px;
   margin-bottom: 40px;
 }
 section.content .label1 .row .Boot{
@@ -64,12 +71,16 @@ section.content .label1 .row .Node{
 }
 section.content .label1 .row .Seq {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 45px;
   margin-bottom: 40px;
+}
+section.content .well {
+  margin-top: 50px;
 }
 section.sec1 .ui p {
   text-align: left;
 }
+
 .content{
 
   text-align: justify;
@@ -82,11 +93,12 @@ section.sec1 .ui p {
   padding-left: 10px;
   margin:10px;
 }
+
 .content .well {
-  margin-top: 50px;
+  margin: 0 auto;
   background: #fff;
   position: relative;
-  left: 250px;
+  left: auto;
   min-height: 20px;
   padding: 19px;
   margin-bottom: 50px;
@@ -302,9 +314,21 @@ section .section-title {
     border-radius: 50%;
 }
 
+footer .footer .container {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  color:#fff;
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 1024px) {
+  section.content .label1 {
+    margin-left: -35px;
+  }
   section.sec1 {
+    margin: 0 auto;
     padding: 0px;
     width: 100%;
   }
@@ -325,6 +349,7 @@ section .section-title {
     left: auto;
   }
   section.content {
+    margin: 0 auto;
     width: 700px;
   }
   .content .well {
@@ -402,6 +427,7 @@ section .section-title {
     width: 100%;
   }
   section.content .well {
+    margin-left: 40px;
     margin-bottom: 30px;
   }
   section.content .well {
@@ -428,7 +454,7 @@ section .section-title {
     padding: 0px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 360px) {
   section.sec1 .row {
     width: 100%;
   }
@@ -440,12 +466,14 @@ section .section-title {
     margin: 0px;
   }
   section.content .well {
+    margin-left: 30px;
     margin-bottom: 30px;
   }
   section.content .well {
     width: 300px;
   }
   section.content .label1 {
+    margin-left: 5px;
     width: 100px;
   }
   section.content .label1 .row{
@@ -464,5 +492,11 @@ section .section-title {
   }
   .row #card2 {
     padding: 0px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  section.content .well {
+    margin-left: 10px;
+    margin-bottom: 30px;
   }
 }
