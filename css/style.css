@@ -1,6 +1,7 @@
 html{
   font-family: 'Open Sans', sans-serif;
 }
+/* SEC 1 */
 section.sec1 {
   padding: 200px;
   width: 100%;
@@ -74,13 +75,43 @@ section.content .label1 .row .Seq {
   margin-left: 45px;
   margin-bottom: 40px;
 }
+section.content .label1 .row .Mongo {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+section.content .label1 .row .Sql {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+section.content .label1 .row .Design {
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+section.content .label1 .row .Linux {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+section.content .label1 .row .Wp {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+}
+section.content .label1 .row .Drink {
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-bottom: 40px;
+}
 section.content .well {
   margin-top: 50px;
 }
 section.sec1 .ui p {
   text-align: left;
 }
-
+/* CONTENT */
 .content{
 
   text-align: justify;
@@ -181,6 +212,7 @@ button{
   padding-top: 20px;
   color: white;
 }
+
 /* Card CSS */
 /* FontAwesome for working BootSnippet :> */
 
@@ -322,8 +354,63 @@ footer .footer .container {
   text-align: center;
 }
 
+/* EXPERIENCE */
+
+/*--work--*/
+
+.skill_info_wthree_agile {
+  margin: 0 auto;
+  width: auto ;
+  padding: 20px 0px;
+}
+.work-info {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%;
+}
+.work-info h4 {
+  margin: 0 auto;
+  font-size: 1.2em;
+  padding: .4em 1.2em;
+  color: #fff;
+  position: relative;
+  background: #4183D7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 18px 0 rgba(3, 48, 117, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.19);
+}
+.work-info h4:before {
+  float: left;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  position: absolute;
+  content: '';
+  top: 9px;
+  right: -10px;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #4183D7;
+}
+.work-info p {
+  text-align: left;
+  margin: 0 auto;
+  padding-bottom: 10px; 
+}
+.work-info h5 {
+  text-align: left;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+
+
+/* END */
+
 
 @media only screen and (max-width: 1024px) {
+  
   section.content .label1 {
     margin-left: -35px;
   }
@@ -359,7 +446,12 @@ footer .footer .container {
   }
   section.sec1 .image-flip{
     margin-left: 35px;
-  } 
+  }
+  .skill_info_wthree_agile {
+    margin: 0 auto;
+    width: auto;
+    padding: 20px 0px;
+  }
 }
 @media only screen and (max-width: 887px) {
   section.sec1 .image-flip{
@@ -414,6 +506,11 @@ footer .footer .container {
   section.content .row {
     width: 100%;
   }
+  .skill_info_wthree_agile {
+    margin: 0 auto;
+    width: auto;
+    padding: 20px 0px;
+  }
 }
 @media only screen and (max-width: 414px) {
   section.sec1 .row {
@@ -452,6 +549,12 @@ footer .footer .container {
   }
   .row #card2 {
     padding: 0px;
+  }
+  .sec-title h3 {
+    font-size: 20px;
+  }
+  .sec-title h1 {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 360px) {
